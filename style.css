@@ -1,0 +1,654 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&family=Ubuntu&display=swap');
+
+*{
+    box-sizing: border-box;
+    line-height: 1rem;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    min-width: 1340px; 
+    
+    min-height: 100vh;
+}
+
+/* ======================== Star Main Area ================ */
+/* ======================== Star Header Area ================ */
+
+header{
+    background-image: url(./images/bg-pattern-intro-desktop.svg);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: hsl(13, 100%, 72%);
+    border-bottom-left-radius: 150px;
+}
+/* ======================== Star Navbar Area ================ */
+
+.bar{
+    display: flex;
+    padding: 3rem 2rem;
+    /* align-items: center; */
+}
+
+hr{
+    display: none;
+}
+
+.logo{
+    height: 20px;
+}
+
+.navbar{
+    display: flex; 
+    justify-content: space-between;  
+}
+
+.bar-ul{
+    display: flex;
+    margin-left: 100px;
+    gap: 75px;
+}
+
+.bar-li{
+    list-style: none;
+}
+
+.li-a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Overpass';
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.bar-li:focus{
+    text-decoration-color: white;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+.menu{
+    display: none;
+}
+
+.log{
+    margin-left: 550px;
+    align-items: center;
+}
+
+.drop{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 2rem;
+    border-radius: 8px;
+    padding: 1rem;
+    display: none;
+    position: absolute;
+    margin-left: -6.5rem;
+}
+
+.pro{
+    width: 8rem;
+}
+
+.com{
+    width: 7rem;
+}
+
+.con{
+    width: 8rem;
+}
+
+.drop-a{
+    margin-top: 30px;
+    text-decoration: none;
+    color: hsl(207, 13%, 34%);
+    font-family: 'Overpass';
+    font-weight: 300;
+    cursor: pointer;
+    font-size: 1.2rem; 
+    display: inline-block;   
+}
+
+.drop-a:hover{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+#in-btn{
+    color: white;
+    font-family: 'Overpass';
+    font-size: 1.2rem;
+    border: none;
+    background-color: transparent;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+#sign-btn{
+    color: hsl(356, 100%, 66%);
+    font-family: 'Overpass';
+    font-size: 1.2rem;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+#sign-btn:hover{
+    color: white;
+    background-color: hsl(355, 100%, 74%);
+}
+
+/* ======================== End Navbar Area ================ */
+
+.head{
+    text-align: center;
+    margin-top: 1rem;
+    padding-bottom: 5rem;
+}
+
+.head-h1{
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-family: 'Ubuntu';
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+.head-span{
+    color: hsl(0, 0%, 100%);
+    font-size: 300;
+    font-family: 'Overpass';
+    font-size: 1.2rem;
+}
+
+.btn{
+    margin-top: 2rem;
+    gap: 20px;
+}
+
+.free-btn{
+    padding: 1rem;
+    color: hsl(356, 100%, 66%);
+    background-color: hsl(0, 0%, 100%);
+    font-size: 1.2rem;
+    font-family: 'Overpass';
+    font-weight: 300;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.free-btn:hover{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(355, 100%, 74%);
+}
+
+.more-btn{
+    padding: 1rem;
+    color: hsl(0, 0%, 100%);
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-family: 'Overpass';
+    font-weight: 300;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer; 
+    border: 1px solid white;
+    margin-left: 1rem;
+}
+
+.more-btn:hover{
+    color: hsl(356, 100%, 66%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+/* ======================== End Header Area ================ */
+/* ======================== Start Future Area ================ */
+
+.future-h2{
+    text-align: center;
+    margin-top: 6rem;
+    font-size: 2rem;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    color:  hsl(208, 49%, 24%);
+}
+
+.info{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    /* margin-top: 5rem; */
+    padding: 5rem;
+    gap: 12rem;
+}
+
+.future-img{
+    width: 54%; 
+    margin-top: -7rem;   
+}
+
+.info-h3{
+    font-family: 'Ubuntu';
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    color: hsl(208, 49%, 24%);
+}
+
+.info1-h3{
+    font-family: 'Ubuntu';
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 5.5rem;
+    color: hsl(208, 49%, 24%);
+}
+
+.info-para{
+    font-family: 'Overpass';
+    font-weight: 300;
+    font-style: 1.3rem;
+    color: hsl(207, 13%, 34%);
+    margin-top: 2.5rem;
+    line-height: 2rem;
+}
+
+
+
+/* ======================== End Future Area ================ */
+/* ======================== Start Art Area ================ */
+
+#art{
+    display: flex;
+    gap: 50px;
+    padding: 2rem 15rem;
+    background-color: hsl(237, 17%, 21%);
+    height: 300px;
+    justify-content: space-between;
+    border-radius: 0px 150px 0px 150px;
+    background-image: url(./images/bg-pattern-circles.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 5%;
+    margin-top: 100px;
+}
+
+.art-img{
+    position: relative;
+    height: 450px;
+    margin-top: -90px;
+    z-index: 1;
+}
+
+.art-h2{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Ubuntu';
+    margin-top: 2rem;
+
+}
+
+.art-para{
+    color: white;
+    font-weight: 300;
+    font-family: 'Overpass';
+    font-size: 1rem;
+    align-items: center;
+    margin-top: 2rem;
+    line-height: 2rem;
+    width: 31rem;
+}
+
+/* ======================== End Art Area ================ */
+/* ======================== Start Free Area ================ */
+#free{
+    display: flex;
+    justify-content: space-around;
+    gap: 5rem;
+    margin-top: 5rem;
+    padding: 5rem;
+}
+
+.free1{
+    margin-top: 5rem;
+}
+
+.free-h3{
+    font-family: 'Ubuntu';
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    color: hsl(208, 49%, 24%);
+}
+
+.free-para{
+    font-family: 'Overpass';
+    font-weight: 300;
+    font-style: 1.3rem;
+    color: hsl(207, 13%, 34%);
+    margin-top: 2.5rem;
+    line-height: 2rem;
+}
+
+.free1-h3{
+    font-family: 'Ubuntu';
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 5.5rem;
+    color: hsl(208, 49%, 24%);
+}
+
+.free-img{
+    width: 63%;
+
+}
+/* ======================== End Free Area ================ */
+/* ======================== Start End Area ================ */
+#end{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: hsl(240, 10%, 16%);
+    padding: 5rem ;
+    border-top-right-radius: 150px;
+}
+
+.end-logo{
+    height: 50px;
+}
+
+.end-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.end-h4{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.2rem;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.end-a{
+    padding: 0.8rem 0rem;
+    color: hsl(240, 2%, 79%);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Overpass';
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.end-a:hover{
+    text-decoration: underline;
+    text-decoration-color: hsl(240, 2%, 79%);
+    text-decoration-thickness: 3px;
+}
+/* ======================== End End Area ================ */
+
+/* ======================== End Main Area ================ */
+
+/* ======================== START Footer Area ================ */
+
+.foot {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 20px;
+    color: hsl(35, 77%, 62%);
+    justify-content: center;
+    background-color: hsl(240, 10%, 16%);
+    padding: 5px;
+  }
+  
+.foot a {
+    color: hsl(5, 85%, 63%);
+    text-decoration: none;
+}
+
+.foot a:hover{
+    color: white;
+}
+  
+  
+  /* ======================== End Footer Area ================ */
+  
+  /* ======================== Start Media Querry Area ================ */
+
+@media screen and (max-width:1380px) {
+    .bar-ul{
+        gap: 60px;
+        margin-left: 80px;
+    }
+
+    .log{
+        margin-left: 450px;
+    }
+
+    .future-img{
+        width: 35%; 
+        margin-top: -7rem;   
+    }
+
+    .info-para{
+        width: 31.79rem;
+    }
+
+    .free-img{
+        width: 52%;
+    }
+}  
+
+@media screen and (max-width:375px){
+    body{
+        min-width: 375px;
+    }
+
+    .bar{
+        justify-content: space-between;
+    }
+
+    .menu, .open{
+        display: block;
+    }
+
+    .close, .navbar{
+        display: none;
+    }
+    
+
+    header{
+        background-image: url(./images/bg-pattern-intro-mobile.svg);
+        background-size: cover;
+        background-size: 250%;
+        padding-bottom: 6rem;
+    }
+
+    .bar-ul{
+        flex-direction: column;
+        margin-left: 0px;
+        margin-top: 30px;
+        gap: 3rem;
+    
+    }
+
+    .navbar{
+        flex-direction: column;
+        background-color: hsl(0, 0%, 100%);
+        margin-top: 3rem;
+        padding: 2rem;
+        width: 90vw;
+        height: auto;
+        text-align: center;
+        align-items: center;
+        border-radius: 8px;
+        position: fixed;
+    }
+
+    #in-btn{
+        color: hsl(208, 49%, 24%);
+    }
+
+    #sign-btn{
+        color: white;
+        background-color: hsl(355, 100%, 74%);
+    }
+
+    #sign-btn:hover{
+        background-color: hsl(207, 13%, 34%);
+        color: hsl(355, 100%, 74%);
+    }
+
+    .drop{
+        flex-direction: column;
+        position: absolute;
+        padding: 2rem;
+        padding-right: 3rem;
+        background-color: lightgrey;
+        text-align: center;
+        border-radius: 8px;
+        z-index: 1;
+    }
+
+    .pro, .con, .com{
+        width: 10rem;
+    }
+
+    .drop-a{
+        margin-top: 2rem;
+        display: inline-block;
+    }
+
+    .arrow{
+        content: url(./images/icon-arrow-dark.svg);
+    }
+
+    hr{
+        display: block;
+        margin-top: 2rem;
+    }
+
+    .log{
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .li-a{
+        color: hsl(208, 49%, 24%);
+        z-index: 1;
+    }
+
+    .head-h1{
+        font-size: 2.3rem;
+        line-height: 3rem;
+        padding: 1rem;
+    }
+    .head-span{
+        padding: 2rem;
+        line-height: 2rem;
+    }
+
+    .future-h2{
+        font-size: 1.8rem;
+    }
+
+    .info{
+        flex-direction: column;
+        padding: 2rem;
+        text-align: center;
+        gap: 5rem;
+    }
+
+    .future-img{
+        content: url(./images/illustration-editor-mobile.svg);
+        width: 90%;
+        margin-top: 2rem;
+    }
+
+    .info-h3, .info1-h3{
+        line-height: 2.5rem;
+        font-size: 1.8rem;
+        margin-top: 0rem;
+        font-weight: 700;
+    }
+
+    .info-para{
+        width: 300px;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    #art{
+        flex-direction: column;
+        gap: 2rem;
+        height: fit-content;
+        padding: 2rem;
+        background-size: cover;
+        background-position: top;
+        background-position-y: -165px;
+        margin-top: 200px;
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+
+    .art-img{
+        height: 350px;
+        margin-top: -180px;
+    }
+
+    .art-h2{
+        line-height: 2rem;
+    }
+
+    .art-para{
+        width: 19rem;
+    }
+
+    #free{
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .free-img{
+        content: url(./images/illustration-laptop-mobile.svg);
+        width: 100%;
+    }
+
+    .free-h3, .free1-h3{
+        font-size: 1.5rem;
+    }
+
+    .free-para{
+        width: 18.7rem;
+    }
+
+    #end{
+        flex-direction: column;
+        padding: 2rem;
+        gap: 5rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .end-logo{
+        width: 70px;
+    }
+}
+  
+  /* ======================== End Media Querry Area ================ */
